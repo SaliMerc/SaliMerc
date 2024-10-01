@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @SaliMerc
+- 👋 Hi, I’m Saline Mercy
 - 👀 I’m interested in website development
 - 🌱 I’m currently learning html, css, and javascript
 - 💞️ I’m looking to collaborate on similar projects
