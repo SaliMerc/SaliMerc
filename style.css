@@ -1,0 +1,893 @@
+@font-face {
+    font-family: 'Irish Grover';
+    src: url(./Assets/Irish_Grover/IrishGrover-Regular.ttf);
+}
+@font-face {
+    font-family: 'Jacques Francois';
+    src: url(./Assets/Jacques_Francois/JacquesFrancois-Regular.ttf);
+}
+*{
+    margin: 0;
+    background-color: #a5714d;
+}
+body{
+    margin: 0;
+    position: relative;
+}
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-family: 'Irish Grover';
+    font-weight: 400;
+    font-style: normal;
+}  
+.jacques-francois-regular {
+    font-family: "Jacques Francois", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    position: relative;
+    background: transparent;
+    font-family: "Irish Grover", system-ui;
+    font-size: 25px;
+}
+span{
+    background: transparent;
+}
+.yellow{
+    color: #FBEC6C;
+}
+.white{
+    color: #E3E0C0;
+}
+h2{
+    font-family: "Irish Grover", system-ui;
+    font-size: 18px;
+    position: relative;
+}
+h3{
+    font-family: "Irish Grover", system-ui;
+    font-size: 14px;
+    position: relative;
+}
+p{
+    position: relative;
+    background: transparent;
+    font-family: "Jacques Francois", serif;
+    font-size: 15px;
+}
+.navBarHero{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+#navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo img{
+    position: relative;
+    background: transparent;
+    object-fit: cover;
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.closeOpen{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.closeOpen img{
+    position: relative;
+    background: transparent;
+    width: 40px;
+    height: 30px;
+}
+#close{
+    display: none;
+}
+.links ul{
+    position: relative;
+    background: transparent;
+    list-style: none;
+    padding-right: 10px;
+    display: none;
+}
+.links ul li{
+    position: relative;
+    background: transparent;
+}
+.links ul li a{
+    position: relative;
+    background: transparent;
+    font-family: "Jacques Francois", serif;
+    text-decoration: none;
+    color: Black;
+    font-size: 15px;
+    line-height: 25px;
+}
+.navBarHero::before{
+    content: '';
+    background-image: url(./Assets/HERO\ PIC.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#heroSection{
+    width: 75%;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.h1, .p{
+    width: 100%;
+    padding-left: 10px;
+}
+#heroSection p{
+    color: #E3E0C0;
+    text-align: justify;
+}
+#sectionOne{
+    width: 100%;
+    margin-top: 15px;
+}
+.textDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.h2m, .pm{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.h2m{
+    width: 70%;
+}
+.pm{
+    padding-top: 10px;
+}
+.subTexts{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.t1, .t2{
+    width: 100%;
+}
+.t1{
+    padding-left: 10px;
+}
+.imageDiv{
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+.imageDiv img{
+    width: 90%;
+    object-fit: contain;
+}
+#sectionTwo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.image{
+    width: 100%;
+    padding-left: 10px;
+}
+.image img{
+    object-fit: contain;
+    width: 100%;
+}
+.textTwo{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+#sectionThree{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.threeTwo{
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+#contactSection{
+    padding-left: 10px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contactTextIcons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.texte{
+    text-decoration: none;
+    color: black;
+    font-family: "Jacques Francois", serif;
+    padding-top: 15px;
+}
+.email, .phone{
+    display: flex;
+    gap: 5px;
+}
+.sm p{
+    font-size: 18px;
+}
+.socials{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    gap: 10px;
+}
+.input, .message{
+    height: 40px;
+    border-radius: 10px;
+    font-family: "Jacques Francois", serif;
+    font-size: 20px;
+    background-color: #FBEC6C;
+    opacity: 70%;
+}
+.message{
+    height: 100px;
+}
+.submit{
+    height: 40px;
+    width: 50%;
+    font-family: "Jacques Francois", serif;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    width: 100%;
+    padding-top: 20px;
+}
+.footer p{
+    font-size: 6px;
+}
+.copyright{
+    width: 50%;
+}
+.others{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (min-width:768px){
+    h1{
+        position: relative;
+        background: transparent;
+        font-family: "Irish Grover", system-ui;
+        font-size: 35px;
+    }
+    h2{
+        font-family: "Irish Grover", system-ui;
+        font-size: 25px;
+        position: relative;
+    }
+    h3{
+        font-family: "Irish Grover", system-ui;
+        font-size: 20px;
+        position: relative;
+    }
+    p{
+        position: relative;
+        background: transparent;
+        font-family: "Jacques Francois", serif;
+        font-size: 19px;
+    }
+    .navBarHero{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    #navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo img{
+        position: relative;
+        background: transparent;
+        object-fit: cover;
+        width: 250px;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+    .closeOpen{
+        padding-right: 10px;
+        padding-top: 10px;
+        display: none;
+    }
+    .closeOpen img{
+        position: relative;
+        background: transparent;
+        width: 40px;
+        height: 30px;
+    }
+    #close{
+        display: none;
+    }
+    .links ul{
+        position: relative;
+        background: transparent;
+        list-style: none;
+        padding-right: 10px;
+        display: flex;
+    }
+    .links ul li{
+        position: relative;
+        background: transparent;
+
+    }
+    .links ul li a{
+        position: relative;
+        background: transparent;
+        font-family: "Jacques Francois", serif;
+        text-decoration: none;
+        color: Black;
+        font-size: 17px;
+        float: left;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-right: 10px;
+        display: block;
+        line-height: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    .navBarHero::before{
+        content: '';
+        background-image: url(./Assets/HERO\ PIC.png);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #heroSection{
+        width: 60%;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .h1, .p{
+        width: 100%;
+        padding-left: 10px;
+    }
+    #heroSection p{
+        color: #E3E0C0;
+        text-align: justify;
+    }
+    #sectionOne{
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+    }
+    .textDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+    }
+    .h2m, .pm{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .h2m{
+        width: 70%;
+    }
+    .pm{
+        padding-top: 10px;
+    }
+    .subTexts{
+        margin-top: 15px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+    }
+    .t1, .t2{
+        width: 100%;
+    }
+    .t1{
+        padding-left: 10px;
+    }
+    .imageDiv{
+        width: 100%;
+        padding-right: 20px;
+        padding-bottom: 15px;
+    }
+    .imageDiv img{
+        width: 100%;
+        object-fit: contain;
+    }
+    #sectionTwo{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .image img{
+        object-fit: contain;
+        width: 100%;
+    }
+    .textTwo{
+        width: 100%;
+        height: 100%;
+        padding-top: 15px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-self: center;
+    }
+    #sectionThree{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .threeOne{
+        width: 60%;
+        text-align: justify;
+    }
+    .threeTwo{
+        padding-top: 10px;
+        display: flex;
+        gap: 30px;
+    }
+    .one{
+        text-align: justify;
+    }
+    .two{
+        padding-right: 25px;
+        text-align: justify;
+    }
+    #contactSection{
+        padding-left: 10px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+    .contactTextIcons{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 70%;
+    }
+    .texte{
+        text-decoration: none;
+        color: black;
+        font-family: "Jacques Francois", serif;
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    .email, .phone{
+        display: flex;
+        gap: 5px;
+    }
+    .sm p{
+        font-size: 20px;
+    }
+    .socials{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .socials img{
+        width: 40px;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+        gap: 10px;
+        width: 100%;
+    }
+    .input, .message{
+        height: 40px;
+        border-radius: 10px;
+        font-family: "Jacques Francois", serif;
+        font-size: 20px;
+        background-color: #FBEC6C;
+        opacity: 70%;
+        padding-left: 10px;
+    }
+    .message{
+        height: 100px;
+    }
+    .submit{
+        height: 40px;
+        width: 50%;
+        font-family: "Jacques Francois", serif;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .footer p{
+        font-size: 15px;
+    }
+    .copyright{
+        width: 100%;
+    }
+    .others{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width:1100px){
+    h1{
+        position: relative;
+        background: transparent;
+        font-family: "Irish Grover", system-ui;
+        font-size: 85px;
+    }
+    h2{
+        font-family: "Irish Grover", system-ui;
+        font-size: 65px;
+        position: relative;
+    }
+    h3{
+        font-family: "Irish Grover", system-ui;
+        font-size: 45px;
+        position: relative;
+    }
+    p{
+        position: relative;
+        background: transparent;
+        font-family: "Jacques Francois", serif;
+        font-size: 35px;
+        line-height: 65px;
+    }
+    .navBarHero{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    #navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logo img{
+        position: relative;
+        background: transparent;
+        object-fit: cover;
+        width: 500px;
+        padding-left: 50px;
+        padding-top: 90px;
+    }
+    .closeOpen{
+        padding-right: 10px;
+        padding-top: 10px;
+        display: none;
+    }
+    .closeOpen img{
+        position: relative;
+        background: transparent;
+        width: 40px;
+        height: 30px;
+    }
+    #close{
+        display: none;
+    }
+    .links ul{
+        position: relative;
+        background: transparent;
+        list-style: none;
+        padding-right: 10px;
+        display: flex;
+    }
+    .links ul li{
+        position: relative;
+        background: transparent;
+
+    }
+    .links ul li a{
+        position: relative;
+        background: transparent;
+        font-family: "Jacques Francois", serif;
+        text-decoration: none;
+        color: Black;
+        font-size: 35px;
+        float: left;
+        padding-left: 30px;
+        padding-top: 120px;
+        padding-right: 50px;
+        display: block;
+        line-height: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    .navBarHero::before{
+        content: '';
+        background-image: url(./Assets/HERO\ PIC.png);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #heroSection{
+        width: 45%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .h1{
+        padding-top: 120px;
+    }
+    .p{
+        font-size: 45px;
+    }
+    .h1, .p{
+        width: 100%;
+        padding-left: 50px;
+    }
+    #heroSection p{
+        color: #E3E0C0;
+        text-align: justify;
+    }
+    #sectionOne{
+        width: 100%;
+        padding-top:  50px;
+        display: flex;
+        gap: 25px;
+    }
+    .textDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        align-self: center;
+    }
+    .h2m, .pm{
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+    .h2m{
+        width: 60%;
+    }
+    .pm{
+        padding-top: 10px;
+        text-align: justify;
+        width: 80%;
+    }
+    .subTexts{
+        margin-top: 15px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 60px;
+        width: 100%;
+    }
+    .t1, .t2{
+        width: 100%;
+        text-align: justify;
+    }
+    .t1{
+        padding-left: 50px;
+    }
+    .imageDiv{
+        width: 100%;
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .imageDiv img{
+        width: 100%;
+        object-fit: contain;
+    }
+    #sectionTwo{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        gap: 25px;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .image img{
+        object-fit: contain;
+        width: 100%;
+    }
+    .textTwo{
+        width: 100%;
+        height: 100%;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-self: center;
+    }
+    .h22{
+        width: 80%;
+    }
+    .p22{
+        width: 90%;
+    }
+    #sectionThree{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    .threeOne{
+        width: 60%;
+        text-align: justify;
+    }
+    .h23, .p23{
+        padding-left: 50px;
+    }
+    .h23{
+        width: 65%;
+    }
+    .p23{
+        width: 80%;
+    }
+    .threeTwo{
+        padding-top: 25px;
+        display: flex;
+        gap: 50px;
+    }
+    .threeTwo img{
+        height: 150px;
+    }
+    .one{
+        text-align: justify;
+        padding-left: 50px;
+    }
+    .two{
+        padding-right: 25px;
+        text-align: justify;
+    }
+    .p33{
+        width: 70%;
+    }
+    #contactSection{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        width: 100%;
+    }
+    .contactTextIcons{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        padding-left: 50px;
+    }
+    .texte{
+        text-decoration: none;
+        color: black;
+        font-family: "Jacques Francois", serif;
+        padding-top: 15px;
+        font-size: 30px;
+    }
+    .email, .phone{
+        display: flex;
+        gap: 5px;
+    }
+    .email img, .phone img{
+        width: 100px;
+    }
+    .sm p{
+        font-size: 35px;
+    }
+    .socials{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 50px;
+    }
+    .socials img{
+        width: 100px;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        gap: 25px;
+        width: 100%;
+    }
+    .input, .message{
+        height: 80px;
+        border-radius: 25px;
+        font-family: "Jacques Francois", serif;
+        font-size: 30px;
+        background-color: #FBEC6C;
+        opacity: 70%;
+        padding-left: 25px;
+    }
+    .message{
+        height: 300px;
+    }
+    .submit{
+        height: 70px;
+        width: 30%;
+        font-family: "Jacques Francois", serif;
+        font-size: 30px;
+        border-radius: 20px;
+        padding-left: 25px;
+        text-align: left;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 120px;
+    }
+    .footer p{
+        font-size: 25px;
+    }
+    .copyright p{
+        width: 100%;
+        padding-left: 50px;
+    }
+    .others{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .others p{
+        padding-right: 50px;
+    }
+}
